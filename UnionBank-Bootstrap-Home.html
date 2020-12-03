@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UB | Bootstrap | Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrapcss/bootstraphome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/bootstrapcss/bootstraphome.css">
+        <style>
+          .carousel-inner > .item > img,
+          .carousel-inner > .item > a > img {
+            width: 100%;
+            margin: auto;
+          }
+          </style>
+      </head>
+    <body>
+      <nav class="navbar navbar-inverse" 
+            style="background-color:white;
+                   border-color: white;">
+
+        <div class="container-fluid"
+            style="margin-top:30px;">
+
+          <div class="navbar-header ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo/UnionBank.png" height="80px" lenght="180px"
+                  style="margin-top: -30px;">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Credit Card</a></li>
+                  <li><a href="#">Debit Card</a></li>
+                  <li><a href="#">Prepaid Card</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Corporate <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Cash Managemnt</a></li>
+                    <li><a href="#">SME Banking Solution</a></li>
+                    <li><a href="#">Treasury and Distribution</a></li>
+                    <li><a href="#">Trust and Investment</a></li>
+                    <li><a href="#">e Commerce Payment</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Investor Relation</a></li>
+                  <li><a href="#">Disclosure</a></li>
+                  <li><a href="#">Corporate Governance</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+          <li class="item3"></li>
+          <li class="item4"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="assets/images/carousel/Screenshot (292).png" alt="Chania" width="460" height="345">
+          </div>
+    
+          <div class="item">
+            <img src="assets/images/carousel/Screenshot (293).png" alt="Chania" width="460" height="345">
+          </div>
+        
+          <div class="item">
+            <img src="assets/images/carousel/Screenshot (294).png" alt="Flower" width="460" height="345">
+          </div>
+    
+          <div class="item">
+            <img src="assets/images/carousel/Screenshot (295).png" alt="Flower" width="460" height="345">
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+      // Activate Carousel
+      $("#myCarousel").carousel({interval: 500});
+        
+      // Enable Carousel Indicators
+      $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+      });
+      $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+      });
+      $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+      });
+      $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+      });
+        
+      // Enable Carousel Controls
+      $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+      });
+      $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+      });
+    });
+    </script>
+
+<div class="row" 
+      style="text-align: center;
+             color: white;
+             ">
+  <div class="col-sm-4" style="background-color:rgb(241, 133, 60);"><img src="https://www.unionbankph.com/sites/default/files/2018-09/pick-a-card-ql.png" style="color: white;" alt="Pick A Card">
+    <p>Pick a Card</p></div>
+  <div class="col-sm-4" style="background-color:rgb(241, 133, 60);"><img src="https://www.unionbankph.com/sites/default/files/2018-09/handle-accts-ql.png" alt="Accounts">
+    <p>Accounts</p>
+  </div>
+  <div class="col-sm-4" style="background-color:rgb(241, 133, 60);"><img src="https://www.unionbankph.com/sites/default/files/2018-09/loans-ql.png" alt="Loans">
+    <p>Loans</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="jumbotron" style="background-color: gray;">
+    <div class="row">
+      <div class="col-md-4">ABOUT UNIONBANK OF THE PHILIPPINES</div>
+      <div class="col-md-4">PRIVACY AND SECURITY</div>
+      <div class="col-md-2">FOLLOW US</div>
+      <div class="col-md-2"><a href="#"><img src="assets/images/logo/UnionBank.png" width="80" height="40" style="border-radius: 10%;"></a>
+        <img src="assets/images/logo/BancNet.png" width="80" height="40" style="border-radius: 10%;"></a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Who We Are</div>
+      <div class="col-sm-2">News</div>
+      <div class="col-sm-2">Privacy Policy</div>
+      <div class="col-sm-2">Surf Surfing Guidelines</div>
+      <div class="col-sm-2"> <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+  </div>
+    <div class="row">
+      <div class="col-sm-2">Corporate Governance</div>
+      <div class="col-sm-2">Sustainability</div>
+      <div class="col-sm-2">Cookie Policy</div>
+      <div class="col-sm-2">Site Map</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Investor Relation</div>
+      <div class="col-sm-2">Careers</div>
+      <div class="col-sm-2">Terms of Use</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Disclosure</div>
+      <div class="col-sm-2">FAQ</div>
+      <div class="col-sm-2">Web Linking Practices</div>
+    </div>
+  </div>
+</div>
+<!--
+<div class="container-fluid">
+  <div class="jumbotron" style="background-color: rgb(223, 217, 217);">
+  <div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th>For inquiries and comments, please contact our 24-Hour Customer Service at</th>
+          <th>Union Bank of the Philippines is an entity regulated by the Bangko Sentral ng Pilipinas (BSP).</th>
+          <th><img src="assets/images/logo/UnionBank.png" width="80" height="40" style="border-radius: 10%;"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Metro Manila&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+632) 8841-8600</td>
+          <td>You may contact the BSP Consumer Empowerment Group at consumeraffairs@bsp.gov.ph.</td>
+          <td>Copyright Union Bank of the Philippines 2019 All Rights Reserved.</td>
+        </tr>
+        <div class="clearfix"></div>
+        <tr>
+          <td>PLDT domestic toll free&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+632) 8841-86001-800-1888-2277</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>-->
+
+
+<div class="container-fluid">
+  <div class="jumbotron" style="background-color: rgb(207, 202, 202);">
+    <div class="row">
+      <div class="col-md-4">For inquiries and comments, please contact our 24-Hour Customer Service at</div>
+      <div class="col-md-4">Union Bank of the Philippines is an entity regulated by the Bangko Sentral ng Pilipinas (BSP).</div>
+      <div class="col-md-4"><a href="#"><img src="assets/images/logo/UnionBank.png" width="80" height="40" style="border-radius: 10%;"></a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Metro Manila</div>
+      <div class="col-sm-2">+632) 8841-8600</div>
+      <div class="col-sm-4">You may contact the BSP Consumer Empowerment Group at consumeraffairs@bsp.gov.ph</div>
+      <div class="col-sm-4">Copyright Union Bank of the Philippines 2019 All Rights Reserved.</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">PLDT domestic toll free</div>
+      <div class="col-sm-2">1-800-1888-2277</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">International toll-free</div>
+      <div class="col-sm-2">(IAC) + 800-8277-22737</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Email Address</div>
+      <div class="col-sm-2">customer.service@unionbankph.com</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Head Office Address</div>
+      <div class="col-sm-2">UnionBank Plaza Bldg., Meralco Ave. corner Onyx St., Ortigas Center, Pasig City, Philippines</div>
+    </div>
+  </div>
+</div>
+        
+        
+    </body>
