@@ -25,23 +25,23 @@ img{
 }
 
 .navbar-nav:hover{
-  color:rgb(228, 120, 20);
+  color:#f7931e;
   background-color: white;
   cursor: pointer;
 }
 
 .navbar-inverse .navbar-nav>.open>a{
-  color:  rgb(228, 120, 20);
+  color: #f7931e;
   background-color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: rgb(228, 120, 20);
+  color: #f7931e;
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav>.open>a:hover {
-  color: rgb(228, 120, 20);
+  color: #f7931e;
   background-color: white;
 }
 
@@ -69,7 +69,7 @@ img{
 
 .dropdown-menu>li>a:hover{
   color: white;
-  background-color:  rgb(228, 120, 20);
+  background-color:  #f7931e;
 }
 .dropdown-menu{
   box-shadow: 3px 3px 5px rgb(187, 184, 184);
@@ -79,7 +79,15 @@ img{
   padding-left: 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: #979797;
+.search {
+  background-color: rgb(240, 234, 234);
+}
+
+.user{
+  background-color: #f7931e;
+}
+
+.carousel.slide{
+  margin-top: -18px;
 }
 
